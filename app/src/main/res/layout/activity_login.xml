@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/sgt_login_bg"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.activity.LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--loading custom-->
+            <include
+                android:visibility="gone"
+                layout="@layout/progressbar_loading"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/loToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@android:color/transparent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@id/btnBack"
+                        android:layout_width="@dimen/img_back"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/padding_12dp"
+                        android:tint="@color/textColorWhite"
+                        android:src="@drawable/ic_keyboard_arrow_left_white_36dp"
+                        android:contentDescription="@string/str_back" />
+
+                    <TextView
+                        android:id="@+id/font_text1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="Quay lại"
+                        android:textColor="@color/textColorWhite"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:visibility="invisible"
+                        android:layout_width="@dimen/img_back"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="Xóa"
+                        android:textColor="@android:color/background_light"
+                        android:background="@null"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/sg_logo_1"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/view_login"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:focusableInTouchMode="true"
+                    app:hintEnabled="false"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@id/txtUser"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/padding"
+                        android:hint="Tên đăng nhập/ Email/ Điện thoại"
+                        android:textSize="14sp"
+                        android:nextFocusDown="@+id/txtPassword"
+                        android:background="@drawable/bg_edit_text"
+                        android:textColorHint="@color/md_grey_800"
+                        android:textColor="@color/md_grey_800" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:focusableInTouchMode="true"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true">
+                    <EditText
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:id="@id/txtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:hint="Mật khẩu"
+                        android:inputType="textPassword"
+                        android:background="@drawable/bg_edit_text"
+                        android:textColorHint="@color/md_grey_800"
+                        android:textColor="@color/md_grey_800"
+                        android:padding="@dimen/padding"
+                        android:textSize="14sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:padding="@dimen/padding"
+                    android:textColor="@color/textColorWhite"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/khong_the_dang_nhap"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:id="@id/tvKhongTheDangNhap"
+                    />
+
+                <Button
+                    android:id="@id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/bg_btn_tap"
+                    android:paddingLeft="60dp"
+                    android:paddingRight="60dp"
+                    android:text="@string/dang_nhap"
+                    android:textColor="@color/textColorWhite"
+                    android:textSize="@dimen/textSize_16sp"
+                    android:layout_below="@+id/tvKhongTheDangNhap"
+                    android:layout_centerHorizontal="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/font_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chua_co_tai_khoan"
+                        android:textColor="@color/textColorWhite"
+                        android:textSize="@dimen/textSize_14sp" />
+
+                    <TextView
+                        android:id="@id/tvDangKy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding_12dp"
+                        android:text="@string/tham_gia_ngay"
+                        android:textColor="@color/textColorWhite"
+                        android:textSize="@dimen/textSize_16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

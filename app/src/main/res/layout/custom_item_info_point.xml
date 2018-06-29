@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!--Dong hien thi-->
+    <LinearLayout
+        android:id="@+id/ln_item_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/stt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            tools:text="300" />
+
+        <TextView
+            android:id="@+id/pham_vi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.3"
+            android:padding="@dimen/padding"
+            android:textSize="12sp"
+            tools:text="Cộng đồng vpoint" />
+
+        <TextView
+            android:id="@+id/so_diem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="@dimen/padding"
+            android:textSize="12sp"
+            tools:text="100" />
+
+        <TextView
+            android:id="@+id/han_su_dung"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:textSize="12sp"
+            tools:text="15/10/2017" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/tab_border" />
+
+</LinearLayout>

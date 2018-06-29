@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    tools:context=".ui.activity.DonatePointActivity">
+    <!--Chua dang nhap-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lo_chua_dang_nhap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_tangdiem_chuadn"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_back_chua"
+                android:layout_width="@dimen/img_back"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_12dp"
+                android:src="@drawable/ic_keyboard_arrow_left_white_36dp"
+                android:contentDescription="@string/str_back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tặng điểm"
+                android:textColor="@color/textColorWhite"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="@dimen/img_back"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                tools:src="@drawable/ic_keyboard_arrow_left_white_36dp"
+                android:contentDescription="@string/str_back" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@id/lo_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/font_gioithieu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_20dp"
+                        android:text="@string/str_thong_bao_tang_diem"
+                        android:textSize="16dp" />
+
+
+                    <Button
+                        android:id="@id/btnLogin"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_btn_tap"
+                        android:paddingLeft="@dimen/padding_32dp"
+                        android:paddingRight="@dimen/padding_32dp"
+                        android:text="ĐĂNG NHẬP"
+                        android:elevation="@dimen/elevation_button"
+                        android:textColor="@color/textColorWhite" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!--Da dang nhap-->
+    <LinearLayout
+        android:id="@+id/lo_da_dang_nhap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!--loading custom-->
+        <include
+            layout="@layout/progressbar_loading"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@mipmap/ic_bg_top_uudai"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@id/btnBack"
+                    android:layout_width="@dimen/img_back"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_12dp"
+                    android:src="@drawable/ic_keyboard_arrow_left_white_36dp"
+                    android:contentDescription="@string/str_back" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Tặng điểm"
+                    android:textColor="@color/textColorWhite"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/img_back"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    tools:src="@drawable/ic_keyboard_arrow_left_white_36dp"
+                    android:contentDescription="@string/str_back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_20dp"
+                    android:text="@string/str_tang_diem_Spoint"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="@dimen/textSize_16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_marginTop="@dimen/padding_12dp"
+                    android:background="@null"
+                    android:id="@+id/txtPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_12dp"
+                    android:layout_marginRight="@dimen/padding_12dp"
+                    android:hint="Điền số điểm"
+                    android:inputType="number"
+                    android:paddingTop="@dimen/padding_12dp"
+                    android:paddingBottom="@dimen/padding"
+                    android:textSize="@dimen/textSize_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/padding_12dp"
+                    android:layout_marginRight="@dimen/padding_12dp"
+                    android:background="@color/tab_border" />
+
+
+                <EditText
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/padding"
+                    android:paddingTop="@dimen/padding_20dp"
+                    android:background="@null"
+                    android:id="@+id/txt_sdt_nguoi_nhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_12dp"
+                    android:layout_marginRight="@dimen/padding_12dp"
+                    android:paddingBottom="@dimen/padding"
+                    android:hint="Điền SĐT/email hội viên được tặng"
+                    android:textSize="@dimen/textSize_14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/padding_12dp"
+                    android:layout_marginRight="@dimen/padding_12dp"
+                    android:background="@color/tab_border" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lo_chon_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_8dp"
+                    android:paddingTop="@dimen/padding_8dp">
+
+                    <TextView
+                        android:id="@+id/tv_loai_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/padding"
+                        android:text="Chọn loại point" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/padding_20dp">
+
+                        <ImageView
+                            android:id="@+id/imageViewShop"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_keyboard_arrow_down_black_36dp"
+                            android:contentDescription="@string/str_item" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_donate_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_32dp"
+            android:background="@drawable/bg_btn_tap"
+            android:elevation="@dimen/elevation_button"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="Tặng điểm"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/textSize_16sp" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

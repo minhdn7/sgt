@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@mipmap/ic_bg_top_uudai" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:gravity="center"
+            android:text="Hết thời gian tạo \n mã tích điểm"
+            android:textAllCaps="true"
+            android:textColor="@color/md_white"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_15sdp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:text="Để bảo vệ tài khoản của quý khách thời gian tạo mã tích điểm chỉ trong vòng 2 phút. Vui lòng ấn nút bên dưới nếu quý khách muốn tiếp tục."
+        android:textColor="@color/md_black"
+        android:textSize="@dimen/_16ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_tao_dialog"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@id/btnYes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:text="Tiếp tục"
+            android:textColor="@color/md_white"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="|"
+            android:textColor="@color/md_white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@id/btnNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_12sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:text="Không sử dụng"
+            android:textColor="@color/md_white"
+            android:textSize="@dimen/_16ssp" />
+    </LinearLayout>
+
+
+</LinearLayout>

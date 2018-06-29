@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:keyboard="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_black"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--chua dang nhap-->
+    <LinearLayout
+        android:id="@+id/ll_not_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_matichdiem_chuadn"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@null"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mã tích điểm"
+                android:fontFamily="@font/sfufuturabook"
+                android:textColor="@color/textColorWhite"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_gioithieu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/sfufuturabook"
+                    android:padding="@dimen/_20sdp"
+                    android:text="@string/str_dangnhap_dangky_inforCard"
+                    android:textSize="@dimen/_16ssp" />
+
+
+                <Button
+                    android:id="@id/btnLogin"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_btn_tap"
+                    android:elevation="@dimen/elevation_button"
+                    android:paddingLeft="@dimen/_32sdp"
+                    android:paddingRight="@dimen/_32sdp"
+                    android:text="ĐĂNG NHẬP"
+                    android:textColor="@color/textColorWhite"
+                    tools:targetApi="lollipop" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Nhap ma PIN-->
+    <ScrollView
+        android:id="@+id/scrollView_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_white"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/_20sdp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/lo_nhap_ma_pin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <include
+                layout="@layout/toolbar_infor_card_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@null"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Mã tích điểm"
+                        android:textColor="@color/md_black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txtMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_32sdp"
+                        android:paddingRight="@dimen/_32sdp"
+                        android:text="@string/str_the_bi_khoa"
+                        android:textColor="@color/md_black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInputPass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtTitlePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Mã tích điểm"
+                    android:textColor="@color/md_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtNhapMa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Vui lòng nhập mã PIN"
+                    android:textColor="@color/md_black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/numberPinId1"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/ic_check_pin" />
+
+                    <ImageView
+                        android:id="@+id/numberPinId2"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:src="@drawable/ic_check_pin" />
+
+                    <ImageView
+                        android:id="@+id/numberPinId3"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:src="@drawable/ic_check_pin" />
+
+                    <ImageView
+                        android:id="@+id/numberPinId4"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:src="@drawable/ic_check_pin" />
+                </LinearLayout>
+
+                <com.davidmiguel.numberkeyboard.NumberKeyboard
+                    android:id="@+id/numberKeyboard"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_gravity="center"
+                    keyboard:keyHeight="60dp"
+                    keyboard:keyWidth="60dp"
+                    keyboard:keyboardType="custom"
+                    keyboard:numberKeyTextSize="30sp"
+                    keyboard:rightAuxBtnIcon="@drawable/ic_backspace" />
+
+                <TextView
+                    android:id="@+id/quenMaPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="Tạo mã PIN/Quên mã PIN" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/llImageBarcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_minus40sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_white"
+                    card_view:cardBackgroundColor="@android:color/white"
+                    card_view:cardElevation="10dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_12sdp">
+
+                        <ImageView
+                            android:id="@+id/imgLogoGif"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_50ssp"
+                            android:contentDescription="@string/str_no_action"
+                            android:src="@mipmap/ic_logo_infor_member" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/timeTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:gravity="center"
+                            android:text="@string/str_thoigian_hieuluc_bar_qrcode"
+                            android:textColor="@color/md_black" />
+
+                        <TextView
+                            android:id="@+id/timeCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:gravity="center"
+                            android:textColor="@color/md_black"
+                            tools:text="time" />
+
+                        <ProgressBar
+                            android:id="@+id/determinateBar"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:indeterminateTint="@color/color_violet_toolbar"
+                            android:progressBackgroundTint="@color/tab_border"
+                            android:progressTint="@color/color_violet_toolbar"
+                            tools:targetApi="lollipop" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ProgressBar
+                                android:id="@+id/progressBarImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center" />
+
+                            <ImageView
+                                android:id="@+id/imageViewBarcode"
+                                android:layout_width="200dp"
+                                android:layout_height="100dp"
+                                android:layout_marginBottom="@dimen/_12sdp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginRight="40dp"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:contentDescription="@string/str_loading" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_barcode_update" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_bar_or_qr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_12sdp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:thumb="@drawable/switch_custom_selector"
+                        app:track="@drawable/switch_custom_track" />
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_qrcode_update" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--tao/quen ma pin-->
+            <LinearLayout
+                android:id="@+id/ll_create_forget_pin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:backgroundTint="@android:color/background_light"
+                    android:hint="Mật khẩu đăng nhập"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_16ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:background="@color/tab_border" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView_captcha"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/_45sdp"
+                        android:contentDescription="@string/str_captcha" />
+
+                    <ImageView
+                        android:id="@+id/imv_refresh_captcha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/str_refresh"
+                        android:src="@drawable/ic_cached_white_48dp"
+                        android:tint="@color/colorBackgroudButton" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_capcha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:backgroundTint="@android:color/background_light"
+                    android:hint="@string/str_nhap_capcha"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_16ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:background="@color/tab_border" />
+
+                <Button
+                    android:id="@+id/btn_continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:background="@drawable/bg_btn_tap"
+                    android:paddingLeft="@dimen/_60sdp"
+                    android:paddingRight="@dimen/_60sdp"
+                    android:text="Tiếp tục"
+                    android:textColor="@color/textColorWhite"
+                    android:textSize="@dimen/_16ssp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

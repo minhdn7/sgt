@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg_radius"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/padding_12dp"
+        android:layout_marginRight="@dimen/padding_12dp"
+        android:layout_marginBottom="@dimen/padding_12dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_32dp"
+        android:paddingRight="@dimen/padding_32dp"
+        tools:text="title"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/padding_12dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_32dp"
+            android:paddingRight="@dimen/padding_32dp"
+            tools:text="content"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_imgView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/ic_check_pin"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@id/btnYes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_left_right_10dp"
+        android:text="OK"
+        android:textColor="@color/textColorWhite" />
+
+</LinearLayout>

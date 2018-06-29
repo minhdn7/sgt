@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.HistoryPointActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/loToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@id/btnBack"
+                android:layout_width="@dimen/img_back"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_12dp"
+                android:src="@drawable/ic_keyboard_arrow_left_white_36dp"
+                android:contentDescription="@string/str_back" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/str_lich_su_giao_dich"
+                android:textColor="@color/textColorWhite"
+                android:textSize="18sp"
+                android:layout_marginRight="@dimen/img_back"/>
+
+        </LinearLayout>
+        <!--Da dang nhap-->
+        <LinearLayout
+            android:id="@+id/lo_da_dang_nhap"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--loading custom-->
+            <include
+                android:visibility="gone"
+                layout="@layout/progressbar_loading"/>
+
+            <LinearLayout
+                android:padding="@dimen/padding_12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_lichsudiem"
+                        android:contentDescription="@string/str_item" />
+
+                    <TextView
+                        android:id="@id/txt_ngay_bat_dau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ngày bắt đầu"
+                        android:layout_marginLeft="@dimen/padding_12dp"
+                        android:layout_marginRight="@dimen/padding_12dp"
+                        android:paddingTop="@dimen/padding_12dp"
+                        android:paddingBottom="@dimen/padding_12dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/tab_border" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_lichsudiem"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@string/str_item" />
+                    <TextView
+                        android:id="@id/txt_ngay_ket_thuc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Ngày kết thúc"
+                        android:layout_marginLeft="@dimen/padding_12dp"
+                        android:layout_marginRight="@dimen/padding_12dp"
+                        android:paddingTop="@dimen/padding_12dp"
+                        android:paddingBottom="@dimen/padding_12dp"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/tab_border" />
+
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/padding_12dp"
+                    android:layout_marginTop="@dimen/padding_32dp"
+                    android:background="@drawable/bg_btn_tap"
+                    android:paddingLeft="60dp"
+                    android:paddingRight="60dp"
+                    android:text="Tra cứu"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="@dimen/textSize_16sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@id/rcvDanhSach"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:background="@color/textColorWhite"
+                    android:visibility="gone"
+                    android:id="@id/lo_null"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/str_chua_co_mo_ta"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!--chua dang nhap-->
+        <LinearLayout
+            android:id="@+id/lo_chua_dang_nhap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_thongtindiem_chuadn"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_gioithieu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_20dp"
+                            android:text="@string/str_dangnhap_dangky_message"
+                            android:textSize="16dp" />
+
+
+                        <Button
+                            android:id="@id/btnLogin"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_btn_tap"
+                            android:paddingLeft="@dimen/padding_32dp"
+                            android:paddingRight="@dimen/padding_32dp"
+                            android:text="ĐĂNG NHẬP"
+                            android:elevation="@dimen/elevation_button"
+                            android:textColor="@color/textColorWhite" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

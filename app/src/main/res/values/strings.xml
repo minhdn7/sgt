@@ -1,0 +1,275 @@
+<resources>
+    <string name="app_name">SaiGon Tourist</string>
+    <!--<string name="api_base_url_saigon_tourist">http://123.31.10.69:2004</string>-->
+    <!--<string name="api_base_url_saigon_image">http://123.31.10.69:2003</string>-->
+    <string name="api_base_url_saigon_tourist">http://221.132.17.68:2004</string>
+    <string name="api_base_url_saigon_image">http://221.132.17.68:2003</string>
+    <!--<string name="api_base_url_vpoint">http://123.31.10.64:8080</string>-->
+    <string name="api_base_url_vpoint">https://v-point.vn</string>
+
+    <!--share preference key-->
+    <string name="TOKEN_DEV">TOKEN_DEV</string>
+    <string name="DEVICE_ID">DEVICE_ID</string>
+    <string name="TOKEN_USER">TOKEN_USER</string>
+    <string name="USER_NAME">USER_NAME</string>
+    <string name="USER_PHONE">USER_PHONE</string>
+    <string name="IS_LOGIN">IS_LOGIN</string>
+    <string name="MA_UNG_DUNG">MOBILE</string>
+    <string name="TOKEN_FIREBASE">TOKEN_FIREBASE</string>
+    <string name="OS">ANDROID</string>
+    <!--end-->
+    <!--gettokenDev-->
+    <string name="gettoken_param1">NhaPhatTrien</string>
+    <string name="gettoken_param2">nhaphattrien@123abc</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">Tiếp</string>
+    <string name="skip">Bỏ qua</string>
+    <string name="start">Bắt đầu</string>
+
+    <string name="slide_1_title">Tích hợp tiện lợi</string>
+    <string name="slide_1_desc">Nhận được ưu đãi từ tất cả các cửa hàng trong cộng đồng với 01 tài khoản duy nhất</string>
+
+    <string name="slide_2_title">Tối ưu lợi ích</string>
+    <string name="slide_2_desc">Điểm tích được từ việc mua sản phẩm này có thể được sử dụng để mua sắm sản phẩm khác theo lựa chọn của khách hàng</string>
+
+    <string name="slide_3_title">Thanh toán ưu việt</string>
+    <string name="slide_3_desc">Thanh toán linh hoạt, thông minh bằng điểm tích lũy hoặc thông qua tài khoản ngân hàng với nhiều ưu đãi hấp dẫn</string>
+
+    <string name="slide_4_title">Khác biệt</string>
+    <string name="slide_4_desc">Có thể tặng điểm giữa các tài khoản Vpoint với thao tác đơn giản</string>
+
+    <string name="home_title">Welcome to Application</string>
+    <string name="home_desc">make friends and have fun.</string>
+
+    <string name="ten_dang_nhap">Tên đăng nhập</string>
+    <string name="mat_khau">Mật khẩu</string>
+    <string name="ho_va_ten">Họ và tên</string>
+    <string name="ngay_sinh">Ngày sinh</string>
+    <string name="str_dia_chi">Địa chỉ đầy đủ</string>
+    <string name="str_so_cmt">Số CMND/Hộ chiếu</string>
+    <string name="str_ngay_cap">Ngày cấp</string>
+    <string name="str_noi_cap">Nơi cấp</string>
+    <string name="str_nghe_nghiep">Nghề nghiệp</string>
+    <string name="nhap_lai_mat_khau">Nhập lại mật khẩu</string>
+    <string name="khong_the_dang_nhap">Không thể đăng nhập?</string>
+    <string name="dang_nhap">ĐĂNG NHẬP</string>
+    <string name="chua_co_tai_khoan">Bạn chưa có tài khoản ?</string>
+    <string name="tham_gia_ngay">THAM GIA NGAY!</string>
+    <string name="email">Email</string>
+    <string name="so_dien_thoai">Số điện thoại</string>
+    <string name="dia_chi">Địa chỉ</string>
+    <string name="gioi_tinh">Giới tính</string>
+    <string name="hoan_tat_dang_ky">HOÀN TẤT ĐĂNG KÝ</string>
+    <string name="dong_y">ĐỒNG Ý</string>
+    <string name="title_tool_bar_dang_ky">Đăng ký tài khoản</string>
+    <string name="title_tool_bar_quen_mat_khau">Quên mật khẩu</string>
+
+    <string name="strNam">Nam</string>
+    <string name="strNu">Nữ</string>
+    <string name="str_dieu_khoan">Tôi đồng ý với các điều khoản sử dụng.</string>
+    <string name="str_dieu_khoan_sudung"> &lt;u> điều khoản sử dụng&lt;/u>.</string>
+
+    <string name="str_thieu_ten_dang_nhap">Tên đăng nhập không được để trống</string>
+    <string name="str_thieu_ten_nguoi_dung">Họ tên không được để trống</string>
+    <string name="str_thieu_so_dien_thoai">Vui lòng nhập thông tin số điện thoại mới</string>
+    <string name="str_dien_thoai_trong">Số điện thoại không được trống</string>
+    <string name="str_thieu_so_dien_thoai_email">Vui lòng nhập số điện thoại/email hội viên được tặng điểm.</string>
+    <string name="str_thieu_email">Email không được để trống.</string>
+    <string name="str_sai_dinh_dang_email">Sai định dạng email</string>
+    <string name="str_sai_dinh_dang_so_dien_thoai">Bắt buộc nhập, định dạng 0xxx(10->11 ký tự)</string>
+    <string name="str_diachi">Tối đa 200 ký tự</string>
+    <string name="str_toi_da_100">Tối đa 100 ký tự</string>
+    <string name="str_toi_da_40">Tối đa 100 ký tự</string>
+    <string name="str_toi_da_20">Tối đa 100 ký tự</string>
+    <string name="str_check_mat_khau">Mật khẩu không được trống</string>
+    <string name="str_check_email">Vui lòng nhập thông tin email mới</string>
+    <string name="str_check_ngay_sinh">Ngày sinh không được trống</string>
+    <string name="str_check_dia_chi">địa chỉ không được để trống</string>
+    <string name="str_check_email_2">Email không được để trống và phải nhâp đúng định dạng mail</string>
+    <string name="str_check_email_3"> Email sai định dạng</string>
+    <string name="str_check_otp">OTP không được để trống</string>
+    <string name="str_dong_y_dieu_khoan">Bạn chưa đồng ý điều khoản</string>
+    <string name="str_min_max_1_100">Phải từ 1 đến 100 ký tự</string>
+    <string name="str_username_min_max_6_20">Tên đăng nhập phải có độ dài từ 6 đến 20 kí tự</string>
+    <string name="str_min_max_6_20"> Mật khẩu phải có độ dài trên 8 ký tự</string>
+    <string name="str_min_max_10_12"> Phải từ 10 đến 12 ký tự</string>
+    <string name="str_nhap_lai_mat_khau">Mật khẩu không khớp </string>
+    <string name="str_dang_ky_thanh_cong">Đăng ký thành công </string>
+
+    <string name="tv_quen_mat_khau">Vui lòng điền thông tin yêu cầu và chúng tôi sẽ gửi link lấy lại Mật khẩu đến email của bạn. </string>
+    <string name="str_nhap_capcha">Nhập captcha</string>
+    <string name="str_thong_bao_quen_mat_khau">Link cài đặt lại mật khẩu đã được gửi đến email của bạn</string>
+
+    <string name="title_uudai">Ưu đãi</string>
+    <string name="title_diem">Điểm</string>
+    <string name="title_barcode">Mã tích điểm</string>
+    <string name="title_timkiem">Tìm kiếm</string>
+    <string name="title_menu">Menu</string>
+
+    <string name="str_xinchao">Xin chào !</string>
+    <string name="str_dang_nhap">Đăng nhập</string>
+    <string name="str_dang_ky">Đăng ký</string>
+    <string name="str_tang_diem">Tặng điểm</string>
+    <string name="str_lich_su_diem">Lịch sử điểm</string>
+    <string name="str_lich_su_giao_dich">Lịch sử giao dịch</string>
+    <string name="str_lich_su_hang">Lịch sử hạng</string>
+    <string name="str_moi_ban_be">Mời bạn bè</string>
+    <string name="str_nhan_tin_qua_sms">Nhận tin qua SMS</string>
+    <string name="str_tro_giup">Chính sách</string>
+    <string name="str_FAQ">FAQ</string>
+    <string name="str_huy_tai_khoan">Hủy tài khoản</string>
+    <string name="str_dang_xuat">Thoát</string>
+    <string name="str_xem_ho_so">Xem hồ sơ cá nhân</string>
+
+    <string name="str_chua_co_mo_ta">Chưa có dữ liệu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_info_user">InfoUserActivity</string>
+    <string name="str_tinh_thanhpho">Tỉnh/ thành phố</string>
+    <string name="str_quan_huyen">Quận/ huyện</string>
+    <string name="str_phuong_xa">Phường/ Xã</string>
+    <string name="str_lua_chon">Lựa chọn</string>
+
+    <!--permission -->
+    <string name="permissions_not_granted">Không được cấp quyền.</string>
+    <string name="permision_available_camera">Đã được cấp quyền.</string>
+
+    <string name="str_check_diem">Vui lòng nhập số điểm.</string>
+    <string name="str_check_null">Không được trống</string>
+    <string name="str_loi_server">Xảy ra lỗi, mã lỗi là :</string>
+    <string name="str_allocated">+</string>
+    <string name="str_spend">-</string>
+    <string name="title_activity_tim_kiems">Tìm kiếm</string>
+
+    <string name="er_ERR_010101">Quý khách vui lòng đăng nhập để sử dụng dịch vụ</string>
+    <string name="er_ERR_010301">Xin mời quý khách đăng nhập để sử dụng dịch vụ</string>
+    <string name="er_ERR_110001">Hệ thống hiện đang bảo trì, vui lòng thử lại sau</string>
+    <string name="er_ERR_110002">Hệ thống hiện đang bảo trì nâng cấp, vui lòng thử lại sau</string>
+
+    <string name="google_maps_key">AIzaSyAivjEfGkA_wU8AJxKf6eO9RdCbYJF5HhY</string>
+
+    <string name="str_diem_vpoint">là điểm chỉ có giá trị sử dụng trong một thời gian ngắn nhất định, có thể sử dụng ở toàn cộng đồng hoặc một cửa hàng cụ thể tùy theo chương chình ưu đãi của doanh nghiệp.</string>
+    <string name="str_diem_doanhnghiep">là điểm thưởng của doanh nghiệp dành riêng cho khách hàng khi mua sắm tại doanh nghiệp đó. Điểm này chỉ có giá trị sử dụng tại các doanh nghiệp và không thanh toán được ở nơi khác trong cộng đồng Vpoint</string>
+
+    <string name="error_service">Xảy ra lỗi, mã lỗi là :</string>
+
+    <!--sua yeu cau text-->
+    <string name="text_huy_tai_khoan">Khi lựa chọn yêu cầu này, bạn sẽ không còn là Hội viên của Vpoint nữa. Toàn bộ số điểm Vpoint, Vinaphone Plus sẽ bị xóa và không thể phục hồi.</string>
+    <string name="text_nhan_tin_nhan_1">Bạn có thể đăng ký nhận tin thông báo thay đổi số dư tài khoản điểm sau mỗi giao dịch phát sinh qua tin nhắn điện thoại (SMS).</string>
+    <string name="text_nhan_tin_nhan_2">Phí SMS: 5 điểm Vpoint/ tháng.</string>
+    <string name="text_huy_tin_nhan">Các thay đổi về số dư tài khoản điểm sẽ không được thông báo qua SMS nếu bạn lựa chọn lệnh này</string>
+
+    <string name="str_no_action">No action</string>
+    <string name="str_loading">Loading</string>
+    <string name="str_back">Back</string>
+    <string name="str_share">Share</string>
+    <string name="str_item">Item</string>
+    <string name="str_doidiem_lpoint">Đổi điểm L.POINT</string>
+    <string name="str_thanhtoan_vnpt_pay">Thanh toán với VNPT Pay</string>
+    <string name="str_captcha">Captcha</string>
+    <string name="str_refresh">Refresh</string>
+    <string name="str_search">Search</string>
+    <string name="str_location">Location</string>
+    <string name="str_detail_info">Detail Info</string>
+    <string name="str_check_selected">Check selected</string>
+    <string name="default_notification_channel_id">News</string>
+
+    <string name="str_the_bi_khoa">Số thẻ của bạn hiện đang bị khóa /hủy. Để có số thẻ mới vui lòng ra các điểm giao dịch hoặc các cửa hàng trong cộng đồng Vpoint để làm lại thẻ vật lý. \n Xin cảm ơn! </string>
+    <string name="str_login_fail"> Sai tên đăng nhập hoặc mật khẩu</string>
+    <string name="str_server_fail"> Không có phản hồi từ server</string>
+
+    <!--Barcode-->
+    <string name="str_time_bar">02 : 00 : 00</string>
+    <string name="str_nhap_ma_pin_bar">Vui lòng nhập mã PIN</string>
+    <string name="str_qua_so_lan_bar">Bạn đã nhập sai mã PIN quá 5 lần. Hệ thống khóa tài khoản trong vòng 5 phút!</string>
+    <string name="str_sai_ma_pin_bar">Nhập sai mã PIN</string>
+
+    <string name="str_nhan_tin_nhan">Nhận tin nhắn</string>
+    <string name="str_huy_tin_nhan">Hủy tin nhắn</string>
+
+    <string name="str_diem_ky_han">Điểm có kỳ hạn:</string>
+    <string name="str_diem_doanh_nghiep">Điểm của doanh nghiệp:</string>
+
+    <string name="txt_mo_ta_nhan_tin_nhan">Bạn có thể đăng ký nhận tin thông báo thay đổi số dư tài khoản điểm sau mỗi giao dịch phát sinh qua tin nhắn điện thoại (SMS).</string>
+    <string name="txt_mo_ta_nhan_tin_nhan_2">Phí SMS: 10 điểm Vpoint/ tháng.</string>
+    <string name="txt_mo_ta_huy_tin_nhan">Các thay đổi về số dư tài khoản điểm sẽ không được thông báo qua SMS nếu bạn lựa chọn lệnh này</string>
+
+    <string name="str_ngay_dang_tin">Ngày đăng tin:</string>
+    <string name="str_lpoint_description"><font fgcolor="#2a869e">LPOINT</font> là chương trình thích điểm cho Hội viên khi thanh toán tại hệ thống cửa hàng của Lotte</string>
+    <string name="str_lpoint_description_1">Bạn có thể đổi điểm Lpoint sang Vpoint và ngược lại khi thanh toán tại hệ thống cửa hàng liên kết của 2 bên </string>
+    <string name="str_dangky_lpoint">Đăng ký Lpoint</string>
+    <string name="str_dangnhap_lpoint">Đăng nhập Lpoint</string>
+    <string name="str_dangxuat_lpoint"> <u> Đăng xuất L.POINT </u> </string>
+
+    <!--PAY-->
+    <string name="dk_phone"> Số ĐT <font fgcolor="#ff9a1d1d">*</font> </string>
+    <string name="dk_pass"> Mật khẩu <font fgcolor="#ff9a1d1d">*</font> </string>
+    <string name="dk_repass"> Nhập lại \nmật khẩu <font fgcolor="#ff9a1d1d">*</font> </string>
+    <string name="dk_email"> Email<font fgcolor="#ff9a1d1d">*</font> </string>
+    <string name="dk_name"> Họ và tên </string>
+    <string name="dk_checkbox"> Tôi xác nhận đồng ý với <u><font fgcolor="#843199">điều khoản</font></u> dịch vụ và <u><font fgcolor="#843199">chính sách</font></u> quyền riêng tư của VNPT Pay </string>
+    <string name="str_thieu_ten">Họ tên không được để trống</string>
+
+    <string name="str_thanhtoan">Vui lòng đăng nhập/ đăng ký trải nghiệm các chức năng thanh toán bằng ứng dụng VNPT Pay</string>
+    <string name="dk_phone_number"> SỐ ĐIỆN THOẠI <font fgcolor="#ff9a1d1d">*</font> </string>
+    <string name="str_kieukhoan"> Bạn có thể sử dụng điểm Vpoint để thanh toán. Số tiền còn lại có thể thanh toán bằng tài khoản ngân hàng. Với thẻ nội địa, số tiền thanh toán tối thiểu 30.000 đồng.  </string>
+
+    <string name="dk_muathe_phone_number"> NHÀ CUNG CẤP <font fgcolor="#ff9a1d1d">*</font> </string>
+    <string name="str_login">Đăng nhập</string>
+    <string name="str_intro_register">Hãy đăng ký thành viên để hưởng ưu đãi hấp dẫn từ cộng đồng Sài Gòn tourist.</string>
+    <string name="str_cap_nhat_thong_tin_sgt">Hãy cập nhật thông tin cá nhân của bạn để nhận đầy đủ các ưu đãi từ Cộng đồng SaiGonTourist</string>
+    <string name="str_change_email">Đổi thông tin email</string>
+    <string name="str_change_phone">Đổi số điện thoại</string>
+    <string name="str_barcode_qrcode">Barcode có thể thay thế thẻ vật lý để bạn tích điểm hoặc thanh toán.</string>
+    <string name="str_barcode_forget_pin">Quý khách vui lòng nhập mật khẩu và mã Captcha.</string>
+    <string name="str_thoigian_hieuluc_bar_qrcode">Thời gian hiệu lực của BarCode/QRCode là :</string>
+    <string name="str_caidatmapin">Cài đặt mã PIN</string>
+    <string name="str_xacnhanmapin">Xác nhận mã PIN</string>
+    <string name="str_vuilongnhapmapin">Vui lòng nhập mã PIN</string>
+    <string name="str_vuilongnhaplaimapin">Vui lòng nhập lại mã PIN</string>
+    <string name="str_xacnhanmapinkhongdung">Mã PIN không khớp. Vui lòng nhập lại!</string>
+    <string name="str_thongBao">Thông báo</string>
+    <string name="str_bat_buoc_khong_duoc_de_trong">Trường bắt buộc không được để trống</string>
+    <string name="str_captcha_error">Phải nhập Capcha</string>
+    <string name="str_policy">Điều khoản</string>
+    <string name="str_dangnhap_dangky_message">Vui lòng ĐĂNG NHẬP hoặc ĐĂNG KÝ để sử dụng tính năng cùng SaiGonTourist.</string>
+    <string name="str_dangnhap_dangky_inforCard">Chức năng này dùng để tích điểm hoặc thanh toán thay cho thẻ vật lý. Vui lòng ĐĂNG NHẬP hoặc ĐĂNG KÝ để sử dụng.</string>
+    <string name="str_memberNo">Mã hội viên</string>
+    <string name="str_intro_point">Bạn có thể tặng điểm SPOINT cho bạn bè để cùng chia sẻ niềm vui mua sắm với hệ sinh thái SPOINT</string>
+    <string name="str_title_point">ĐIỂM SPOINT HIỆN TẠI</string>
+    <string name="str_thong_bao_tang_diem">Bạn có thể tặng điểm Spoint cho bạn bè mình</string>
+    <string name="str_tang_diem_Spoint">Bạn có thể tặng điểm Spoint cho bạn bè mình. Phí tặng điểm là 1% giá trị điểm tặng, tối thiểu 1 điểm.</string>
+    <string name="str_danhsach_cuahang_uudai">Danh sách cửa hàng chấp nhận ưu đãi</string>
+    <string name="str_thong_tin_tai_khoan">Thông tin tài khoản</string>
+    <string name="str_diem_hien_tai">Số điểm hiện tại</string>
+    <string name="str_ngay_het_han_diem">Ngày hết hạn điểm</string>
+    <string name="str_condition_maintain_point">Điều kiện duy trì hạng</string>
+    <string name="str_condition_upgrade_point">Điều kiện lên hạng</string>
+    <string name="str_period_point">Kỳ xét hạng hiện tại</string>
+    <string name="str_spoint">Điểm Spoint</string>
+    <string name="str_card_number">5500005555555555</string>
+    <string name="str_card_name">SaiGon Tourist</string>
+    <string name="str_stt">STT</string>
+    <string name="str_pham_vi">Phạm vi</string>
+    <string name="str_so_diem">Số điểm</string>
+    <string name="str_thoi_han">Thời hạn</string>
+    <string name="str_diem_co_thoi_han">Điểm có thời hạn</string>
+    <string name="str_vpoint">Điểm Vpoint</string>
+
+
+    <string name="str_accept_rank_time">Thời gian xét hạng</string>
+    <string name="str_accept_next_rank_time">Thời gian xét hạng tiếp theo</string>
+    <string name="rank_name">Tên hạng</string>
+    <string name="str_noi_dung">Nội dung</string>
+    <string name="tr_so_diem">Số điểm</string>
+    <string name="str_address">Địa điểm</string>
+    <string name="str_date_transfer">Ngày giao dịch</string>
+    <string name="str_diem_xet_hang">Điểm xét hạng:</string>
+    <string name="str_ky_xet_hang">Kỳ xét hạng hiện tại:</string>
+    <string name="str_thoi_han_su_duyng_diem">Thời hạn sử dụng điểm:</string>
+    <string name="str_so_diem_hien_tai">Số điểm hiện tại:</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/textColorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Điểm Vpoint"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:padding="@dimen/padding_12dp"
+        android:textColor="@color/textColorWhite"
+        android:background="@color/color_chua_chon"
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/padding_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="là điểm chỉ có giá trị sử dụng trong một thời gian ngắn nhất định, có thể sử dụng ở toàn cộng đồng Vpoint hoặc một cửa hàng cụ thể tùy theo chương chình ưu đãi của doanh nghiệp."/>
+
+</LinearLayout>

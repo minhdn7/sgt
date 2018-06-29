@@ -1,0 +1,43 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:2:1-9:12
+	package
+		ADDED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:3:5-30
+		INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+		INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+		ADDED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:2:1-9:12
+		INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+		ADDED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:2:1-9:12
+		INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:5:5-7:19
+activity#com.folioreader.ui.folio.activity.ContentHighlightActivity
+ADDED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:6:9-80
+	android:name
+		ADDED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml:6:19-77
+uses-sdk
+INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+		ADDED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+		INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+		ADDED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml
+		INJECTED from D:\Android_project\read ebook\FolioReader-Android-master\folioreader\AndroidManifest.xml

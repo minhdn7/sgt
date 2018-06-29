@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "109828434473",
+    "firebase_url": "https://saigontourist-a4207.firebaseio.com",
+    "project_id": "saigontourist-a4207",
+    "storage_bucket": "saigontourist-a4207.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109828434473:android:dd2a4a9eee6aa3b5",
+        "android_client_info": {
+          "package_name": "saigontourist.pm1.vnpt.com.saigontourist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109828434473-gjbj81b357s44ffulati9vjsjlk8e7bn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXjZAHWOtbjJUQ5j4etBPCd5a3pXFJ1cI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

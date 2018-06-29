@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--content-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding_12dp"
+                        android:text="Chọn bán kính"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/nam_km"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding"
+                            android:background="@drawable/background_button_blue"
+                            android:paddingBottom="@dimen/padding"
+                            android:paddingLeft="@dimen/padding_12dp"
+                            android:paddingRight="@dimen/padding_12dp"
+                            android:paddingTop="@dimen/padding"
+                            android:text="5km"
+                            android:textColor="@color/textColorWhite" />
+
+                        <TextView
+                            android:id="@+id/tam_km"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding"
+                            android:paddingBottom="@dimen/padding"
+                            android:paddingLeft="@dimen/padding_12dp"
+                            android:paddingRight="@dimen/padding_12dp"
+                            android:paddingTop="@dimen/padding"
+                            android:text="8km"
+                            android:textColor="@color/color_text_main_yes" />
+
+                        <TextView
+                            android:id="@+id/muoi_km"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding"
+                            android:paddingBottom="@dimen/padding"
+                            android:paddingLeft="@dimen/padding_12dp"
+                            android:paddingRight="@dimen/padding_12dp"
+                            android:paddingTop="@dimen/padding"
+                            android:text="10km"
+                            android:textColor="@color/color_text_main_yes" />
+
+                        <TextView
+                            android:id="@+id/hon_muoi_km"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding"
+                            android:paddingBottom="@dimen/padding"
+                            android:paddingLeft="@dimen/padding_12dp"
+                            android:paddingRight="@dimen/padding_12dp"
+                            android:paddingTop="@dimen/padding"
+                            android:text="lớn hơn 10 km"
+                            android:textColor="@color/color_text_main_yes" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding_12dp"
+                        android:text="Chọn lĩnh vực"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/lo_linh_vuc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <Button
+                                android:id="@+id/btn_tatca_hien"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:background="@mipmap/ic_tatca_active" />
+
+                            <Button
+                                android:id="@+id/btn_muasam_hien"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:background="@mipmap/ic_mua_sam_normal" />
+
+                            <Button
+                                android:id="@+id/btn_suckhoe_hien"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:background="@mipmap/ic_suc_khoe_normal" />
+
+                            <Button
+                                android:id="@+id/btn_hien"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp"
+                                android:background="@mipmap/ic_more_normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lo_hien_linh_vuc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_tatca"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_tatca_active" />
+
+
+                                <Button
+                                    android:id="@+id/btn_muasam"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_mua_sam_normal" />
+
+                                <Button
+                                    android:id="@+id/btn_suckhoe"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_suc_khoe_normal" />
+
+                                <Button
+                                    android:id="@+id/btn_giaoduc"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_thoitrang_normal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_dienmay"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_taichinh_normal" />
+
+                                <Button
+                                    android:id="@+id/btn_vienthong"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_vien_thong_normal" />
+
+                                <Button
+                                    android:id="@+id/btn_vantai"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_van_tai_normal" />
+
+                                <Button
+                                    android:id="@+id/btn_dulich"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_du_lich_normal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btn_dientu"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_thuongmai_dientu_normal" />
+
+                                <Button
+                                    android:id="@+id/btn_amthuc"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_am_thuc_normal" />
+
+                                <Button
+                                    android:id="@+id/btn_khac"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_khac_normal" />
+
+                                <Button
+                                    android:id="@+id/btn_an"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:background="@mipmap/ic_less_normal" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding_12dp"
+                        android:text="Chọn doanh nghiệp"
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@id/rcvDanhSach"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@mipmap/ic_vien_thong_normal" />
+</LinearLayout>

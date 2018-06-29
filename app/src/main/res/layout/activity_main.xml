@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="saigontourist.pm1.vnpt.com.saigontourist.ui.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/view_bottom_margin"
+        >
+
+    </FrameLayout>
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        app:active_item_color="@color/md_grey_900"
+        app:centre_button_color="@color/transparent"
+        app:inactive_item_color="@color/md_grey_500"
+        app:space_background_color="@color/md_grey_200"
+        app:space_item_icon_size="@dimen/_30sdp"
+        app:space_item_text_size="@dimen/_10ssp"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
